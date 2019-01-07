@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<% include ../partials/head %>
+	</head>
+	<body class="container">
+		<header>
+			<% include ../partials/header %>
+		</header>
+		<% for(let i = 0; i < str.length; i++) { %>
+			<div class='center'>
+				<ol class='center'>
+					<li class='title'><%= str[i].title %></li>
+					<li class='body'><%= str[i].body %></li>
+				</ol> 
+			</div>
+		<% } %>
+	</body>
+</html>
